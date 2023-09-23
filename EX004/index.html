@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<script src="salarioalt.js"></script>
+
+<script>
+
+    function salarioalt() { // Sim, é possível usar acentuação
+        let salario = parseFloat(prompt("Digite o salário"));
+        let alternativa = prompt('Digite o plano:\n A = 10% \n B = 15% \n C = 20%');
+
+        switch (alternativa.toUpperCase()) {
+            case "A":
+                window.alert("O seu salário é " + (salario * 1.10).toFixed(2));
+                break;
+            case "B":
+                window.alert("O seu salário é " + (salario * 1.15).toFixed(2));
+                break;
+            case "C":
+                window.alert("O seu salário é " + (salario * 1.20).toFixed(2));
+                break;
+            default:
+                window.alert("Digite A, B ou C");
+                break;
+        }
+    }
+
+    salarioalt();
+
+</script>
+</body>
+
+</html>
